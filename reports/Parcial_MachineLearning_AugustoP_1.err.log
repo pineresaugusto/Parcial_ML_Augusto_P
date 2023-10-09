@@ -32,15 +32,8 @@ nbclient.exceptions.CellTimeoutError: A cell timed out while it was being execut
 The message was: Cell execution timed out.
 Here is a preview of the cell contents:
 -------------------
-#Leer datos 
-train_transactions = pd.read_csv("train_transaction.csv")
-train_identity = pd.read_csv("train_identity.csv")
-test_transactions = pd.read_csv("test_transaction.csv")
-test_identity = pd.read_csv("test_identity.csv")
-train_data_transactions = pd.merge(train_transactions, train_identity, on='TransactionID', how='left')
-test_data_transactions = pd.merge(test_transactions, test_identity, on='TransactionID', how='left')
-
-#Quiero ver las primeras 5 filas de train_data_transactions
-train_data_transactions.head(5)
+['#Leer datos ', 'train_transactions = pd.read_csv("train_transaction.csv")', 'train_identity = pd.read_csv("train_identity.csv")', 'test_transactions = pd.read_csv("test_transaction.csv")', 'test_identity = pd.read_csv("test_identity.csv")']
+...
+['', '#Quiero ver las primeras 5 filas de train_data_transactions', 'train_data_transactions.head(5)', 'import warnings', "warnings.filterwarnings('ignore')"]
 -------------------
 
